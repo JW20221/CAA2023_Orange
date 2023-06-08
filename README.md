@@ -4,16 +4,11 @@
 ---
 
 ## Table of Contents
-0. Team participant
 1. Project description
 2. Thins used in this project
 3. How to set it up
 4. Demo
 5. Acknowledgement
----
-
-## 0. Team participant
-Jingmin Wang
 
 ---
 
