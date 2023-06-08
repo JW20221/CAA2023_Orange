@@ -23,12 +23,18 @@ To improve one's foreign language level, reading text suit for the reader's leve
 ---
 
 ## 2. Things used in this project
-**Hardware components**. 
+####Hardware components
+
 M5Stack Core2
+
 M5Stack PIR Motion Unit
-**Software apps and online services**
+
+####Software apps and online services
+
 Google Cloud - BigQuery
+
 Google Cloud - Cloud Functions
+
 IFTTT - Webhook
 
 ---
