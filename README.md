@@ -15,6 +15,8 @@
 ## 1. Project description
 The M5Stack and PIR motion sensor-based home assistant panel is a compact and versatile device that combines security, thermostat control, and a night light feature. It enhances home security by detecting motion and sending immediate notifications to the user's smartphone via IFTTT. Data is logged and stored in Google Cloud BigQuery for analysis. The panel also offers thermostat control for optimal comfort and a customizable night light. 
 
+Detailed description can be found here. Project Description/Project Description.pdf
+
 ---
 
 ## 2. Things used in this project
