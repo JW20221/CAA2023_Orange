@@ -1,0 +1,37 @@
+import json
+from google.cloud import bigquery
+from datetime import datetime
+
+def logAlarmEvent(request):
+    try:
+        # Extract data from request
+        data = request.get_json(force=True)
+        state = data['state']
+
+        # Initialize BigQuery client
+        client = bigquery.Client()
+
+        # Table details
+        table_id = "clean-pen-380815.IoTJW.alarm"
+        table = client.get_table(table_id)  # Make an API request.
+
+        # Generate timestamp
+        current_time = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S.%f')
+
+        # Data to insert
+        rows_to_insert = [(state, current_time)]
+
+        # Insert rows into table
+        errors = client.insert_rows(table, rows_to_insert)  # Make an API request.
+
+        # Check for errors
+        if errors == []:
+            print("New rows have been added.")
+            return json.dumps({"message": "Alarm event logged successfully"}), 200
+        else:
+            print("Encountered errors while inserting rows: {}".format(errors))
+            return json.dumps({"error": str(errors)}), 500
+
+    except Exception as e:
+        error = {"error": str(e)}
+        return json.dumps(error), 500
