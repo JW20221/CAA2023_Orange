@@ -56,7 +56,10 @@ Google Cloud Functions can also be used to create a simple webpage to deisplays 
 ![image](https://github.com/JW20221/CAA2023_Orange/assets/114418889/e6b3ffdf-b5d1-4dc8-9fa5-8e8988a52d76)
 
 ## 4. Demo
-Video link
+This demo shows how the project works. 
+
+https://youtu.be/gTaHTY7ASlk
+
 
 ## 5. Acknowledgement
 I would like to express my thanks to Johannes, Stergios and Prof. Vlachos for their invaluable assistance and support during the completion of the project.
