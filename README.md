@@ -13,7 +13,7 @@
 ---
 
 ## 1. Project description
-To improve one's foreign language level, reading text suit for the reader's level is an efficient way. This project built a model for English speakers that predicts the difficulty of a French written text. This can be used in a recommendation system to recommend texts for readers.
+The M5Stack and PIR motion sensor-based home assistant panel is a compact and versatile device that combines security, thermostat control, and a night light feature. It enhances home security by detecting motion and sending immediate notifications to the user's smartphone via IFTTT. Data is logged and stored in Google Cloud BigQuery for analysis. The panel also offers thermostat control for optimal comfort and a customizable night light. 
 
 ---
 
