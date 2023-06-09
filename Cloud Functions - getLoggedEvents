@@ -1,0 +1,52 @@
+from google.cloud import bigquery
+from flask import make_response
+
+def getLoggedEvents(request):
+    if request.method != 'GET':
+        return 'Only GET requests are allowed', 405
+    
+    try:
+        # Initialize BigQuery client
+        client = bigquery.Client()
+
+        # Query to get all events from the table
+        query = """
+        SELECT * FROM `clean-pen-380815.IoTJW.alarm`
+        ORDER BY timestamp DESC
+        """
+        query_job = client.query(query)
+        results = query_job.result()
+
+        # Building HTML content
+        html_content = """
+        <html>
+        <head>
+            <title>Logged Events</title>
+        </head>
+        <body>
+            <h1>Logged Events</h1>
+            <table border="1">
+                <tr>
+                    <th>State</th>
+                    <th>Timestamp</th>
+                </tr>
+        """
+
+        # Adding table rows from query results
+        for row in results:
+            html_content += f"<tr><td>{row.state}</td><td>{row.timestamp}</td></tr>"
+
+        # Closing tags
+        html_content += """
+            </table>
+        </body>
+        </html>
+        """
+
+        # Creating response
+        response = make_response(html_content)
+        response.headers["Content-Type"] = "text/html"
+        return response
+    
+    except Exception as e:
+        return f"An error occurred: {e}", 500
