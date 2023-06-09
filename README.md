@@ -37,10 +37,12 @@ IFTTT - Webhook
 ## 3. How to set it up
 ### Step 1: UIFlow interface Development
 Connect your M5Stack Core2 to UIFlow by entering the API Key. Connect PIR Sensor to M5Stack via Port B, and add PIR sensor as a new unit on UIFlow. Here is the code for interface development.
+![image](https://github.com/JW20221/CAA2023_Orange/assets/114418889/f42aae79-18fd-4971-9541-dfbd6e170acb)
+Zoom in to see the whole code.
 <img width="564" alt="image" src="https://github.com/JW20221/CAA2023_Orange/assets/114418889/96cd62db-8b76-4ad4-8e5f-c868f67e7699">
 
 ### Step 2: Setting Up IFTTT Notifications
-Sign up for an acount on the IFTTT (If This Then That) platform. Create a Webhook integration to 
+Sign up for an acount on the IFTTT (If This Then That) platform. Create a Webhook integration as "This" and a notification as "That". Here is a tutorial for step-by-setp setting up. https://www.youtube.com/watch?v=6cTEbomZvZI
 
 
 ### Google Cloud Functions
