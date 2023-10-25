@@ -5,7 +5,7 @@
 
 ## Table of Contents
 1. Project description
-2. Thins used in this project
+2. Things used in this project
 3. How to set it up
 4. Demo
 5. Acknowledgement
